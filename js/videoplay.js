@@ -5,7 +5,8 @@ btn.addEventListener('click', function(){
     let video = document.getElementById('video');
     btn.style.display = 'none';
     video.style.display = 'block';
-    video.play();
+    video.volume = 0.2;
+    video.play()
 });
 
 
