@@ -1,0 +1,4 @@
+ProxyPass "/musicbot"  "http://localhost:3000"
+ProxyPass "/twitch" "http://localhost:3040"
+ProxyPass "/adblock" "http://adblock.nereacassian.com/admin"
+ProxyPass "/discord" "http://discord.com/invite/RG8wJZsTna"
