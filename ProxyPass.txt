@@ -1,5 +1,11 @@
-ProxyPass "/musicbot"  "http://localhost:3000"
-ProxyPass "/twitch" "http://localhost:3040"
+<Location /musicbot>
+	ProxyPass http://localhost:3000
+	ProxyPassReverse http://localhost:3000
+</Location>
+<Location /twitch>
+	ProxyPass http://localhost:3040
+	ProxyPassReverse http://localhost:3040
+</Location>
 ProxyPass "/adblock" "http://adblock.nereacassian.com/admin"
 ProxyPass "/discord" "http://discord.com/invite/RG8wJZsTna"
 ProxyPass "/cloud"  "http://nereacassian.com/nextcloud"
