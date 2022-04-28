@@ -19,6 +19,7 @@
 			$body.addClass('is-loading');
 			
 			$window.on('load', function() {
+				$body.css("visibility", "visible")
 				$body.removeClass('is-loading');
 			});
 			
